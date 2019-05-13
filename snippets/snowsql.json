@@ -1,0 +1,18 @@
+{
+	"Create a new Database": {
+		"prefix": "snowCreateDatabase",
+		"body": [
+			"-- CREATE [ OR REPLACE ] [ TRANSIENT ] DATABASE [ IF NOT EXISTS ] '${1:DatabaseName}'",
+			"CREATE DATABASE ${1:DatabaseName}"
+		],
+		"description": "Create a new Snowflake Database"
+	},
+	"List databases": {
+		"prefix": "snowListDatabases",
+		"body": [
+			"-- Get a list of databases",
+			"show databases;"
+		],
+		"description": "List Snowflake databases"
+	}
+}

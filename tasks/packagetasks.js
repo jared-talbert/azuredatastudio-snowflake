@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-varÂ fsÂ =Â require('fs');
+var fs = require('fs');
 var gutil = require('gulp-util');
 var cproc = require('child_process');
 var os = require('os');
@@ -52,7 +52,7 @@ function doPackageSync(packageName) {
 function cleanServiceInstallFolder() {
     return new Promise((resolve, reject) => {
        const config = getServiceInstallConfig();
-       let root = path.join(__dirname, '../out/' + 'pgsqltoolsservice');
+       let root = path.join(__dirname, '../out/' + 'snowflakesqltoolsservice');
         console.log('Deleting Service Install folder: ' + root);
         del(root + '/*').then(() => {
             resolve();

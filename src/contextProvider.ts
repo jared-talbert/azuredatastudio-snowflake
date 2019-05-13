@@ -7,19 +7,19 @@ import * as vscode from 'vscode';
 import * as sqlops from 'sqlops';
 
 export enum BuiltInCommands {
-    SetContext = 'setContext',
+    SetContext = 'setContext'
 }
 
 export enum ContextKeys {
-	ISCLOUD = 'pgsql:iscloud'
+	ISCLOUD = 'snowsql:iscloud'
 }
-
+/*
 const isCloudEditions = [
 	5,
 	6
 ];
-
-export function setCommandContext(key: ContextKeys | string, value: any) {
+*/
+export function setCommandContext(key: ContextKeys | string, value: any): Thenable<any> {
     return vscode.commands.executeCommand(BuiltInCommands.SetContext, key, value);
 }
 
@@ -32,14 +32,16 @@ export default class ContextProvider {
 	}
 
 	public onDashboardOpen(e: sqlops.DashboardDocument): void {
-		let iscloud: boolean;
-		if (e.profile.providerName.toLowerCase() === 'pgsql' && e.serverInfo.engineEditionId) {
+		let iscloud: boolean = true;
+		/*
+		if (e.profile.providerName.toLowerCase() === 'snowsql' && e.serverInfo.engineEditionId) {
 			if (isCloudEditions.some(i => i === e.serverInfo.engineEditionId)) {
 				iscloud = true;
 			} else {
 				iscloud = false;
 			}
 		}
+		*/
 
 		if (iscloud === true || iscloud === false) {
 			setCommandContext(ContextKeys.ISCLOUD, iscloud);

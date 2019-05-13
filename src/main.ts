@@ -56,7 +56,7 @@ export async function activate(context: vscode.ExtensionContext) {
 		const processStart = Date.now();
 		languageClient.onReady().then(() => {
 			const processEnd = Date.now();
-			statusView.text = 'Pgsql service started';
+			statusView.text = 'SnowflakeSQL service started';
 			setTimeout(() => {
 				statusView.hide();
 			}, 1500);
@@ -68,11 +68,11 @@ export async function activate(context: vscode.ExtensionContext) {
 			});
 		});
 		statusView.show();
-		statusView.text = 'Starting pgsql service';
+		statusView.text = 'Starting snowsql service';
 		languageClient.start();
 	}, e => {
 		Telemetry.sendTelemetryEvent('ServiceInitializingFailed');
-		vscode.window.showErrorMessage('Failed to start Pgsql tools service');
+		vscode.window.showErrorMessage('Failed to start SnowflakeSQL tools service');
 	});
 
 	let contextProvider = new ContextProvider();
@@ -92,7 +92,7 @@ function generateServerOptions(executablePath: string): ServerOptions {
 		let useLocalSource = config["useDebugSource"];
 		if (useLocalSource) {
 			let localSourcePath = config["debugSourcePath"];
-			let filePath = path.join(localSourcePath, "pgsqltoolsservice/pgtoolsservice_main.py");
+			let filePath = path.join(localSourcePath, "snowflakesqltoolsservice/snowflaketoolsservice_main.py");
 			process.env.PYTHONPATH = localSourcePath;
 			serverCommand = process.platform === 'win32' ? 'python' : 'python3';
 
@@ -103,7 +103,7 @@ function generateServerOptions(executablePath: string): ServerOptions {
 			serverArgs = [filePath, debuggingArg];
 		}
 
-		let logFileLocation = path.join(Utils.getDefaultLogLocation(), "pgsql");
+		let logFileLocation = path.join(Utils.getDefaultLogLocation(), "snowsql");
 
 		serverArgs.push('--log-dir=' + logFileLocation);
 		serverArgs.push(logFileLocation);

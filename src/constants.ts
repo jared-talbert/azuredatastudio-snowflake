@@ -4,8 +4,8 @@
  *--------------------------------------------------------------------------------------------*/
 'use strict';
 
-export const serviceName = 'pgSQLToolsService';
-export const providerId = 'PGSQL';
-export const serviceCrashMessage = 'PG SQL Tools Service component exited unexpectedly. Please restart Azure Data Studio.';
+export const serviceName = 'SnowflakeSQLToolsService';
+export const providerId = 'SNOWSQL';
+export const serviceCrashMessage = 'Snowflake SQL Tools Service component exited unexpectedly. Please restart Azure Data Studio.';
 export const serviceCrashButton = 'View Known Issues';
-export const serviceCrashLink = 'https://github.com/microsoft/pgtoolsservice/issues?q=is%3Aopen+is%3Aissue+label%3Aknown-issues';
+export const serviceCrashLink = 'https://github.com/jared-talbert/snowflaketoolsservice/issues?q=is%3Aopen+is%3Aissue+label%3Aknown-issues';

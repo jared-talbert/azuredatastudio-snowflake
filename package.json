@@ -1,13 +1,13 @@
 {
-  "name": "azuredatastudio-postgresql",
-  "displayName": "PostgreSQL",
+  "name": "azuredatastudio-snowflake",
+  "displayName": "SnowflakeSQL",
   "version": "0.1.0",
   "publisher": "Microsoft",
-  "description": "PostgreSQL extension for Azure Data Studio",
+  "description": "Snowflake extension for Azure Data Studio",
   "aiKey": "AIF-5574968e-856d-40d2-af67-c89a14e76412",
   "icon": "images/extension-icon.png",
   "repository": {
-    "url": "https://github.com/Microsoft/azuredatastudio-postgresql"
+    "url": "https://github.com/jared-talbert/azuredatastudio-snowflake"
   },
   "license": "MIT",
   "activationEvents": [
@@ -50,7 +50,7 @@
     ],
     "configuration": {
       "type": "object",
-      "title": "PGSQL configuration",
+      "title": "SNOWSQL configuration",
       "properties": {
         "pgsql.logDebugInfo": {
           "type": "boolean",
@@ -60,7 +60,7 @@
         "pgsql.enabled": {
           "type": "boolean",
           "default": true,
-          "description": "[Optional] Enable PostgreSQL support (currently in development)"
+          "description": "[Optional] Enable SnowflakeSQL support (currently in development)"
         },
         "pgsql.debugSourcePath": {
           "type": [
@@ -68,27 +68,27 @@
             "null"
           ],
           "default": null,
-          "description": "[Optional] Path to the source directory of the PostgreSQL Tools Service, for debugging"
+          "description": "[Optional] Path to the source directory of the SnowflakeSQL Tools Service, for debugging"
         },
         "pgsql.useDebugSource": {
           "type": "boolean",
           "default": false,
-          "description": "[Optional] Enable running the PGSQL extension via the path set in pgsql.debugSourcePath"
+          "description": "[Optional] Enable running the SNOWSQL extension via the path set in snowsql.debugSourcePath"
         },
         "pgsql.enableStartupDebugging": {
           "type": "boolean",
           "default": false,
-          "description": "[Optional] Whether to make the PostgreSQL Tools Service wait for a debugger to attach when starting"
+          "description": "[Optional] Whether to make the SnowflakeSQL Tools Service wait for a debugger to attach when starting"
         },
         "pgsql.debugServerPort": {
           "type": "number",
           "default": 3000,
-          "description": "[Optional] The port to run the PostgreSQL Tools Service remote debugger on (default 3000)"
+          "description": "[Optional] The port to run the SnowflakeSQL Tools Service remote debugger on (default 3000)"
         },
         "pgsql.defaultDatabase": {
           "type": "string",
           "default": "postgres",
-          "description": "The default database to use when creating a new PostgreSQL connection"
+          "description": "The default database to use when creating a new SnowflakeSQL connection"
         },
         "pgsql.format.keywordCase": {
           "type": [
@@ -132,9 +132,9 @@
     },
     "connectionProvider": {
       "protocolVersion": "1.0",
-      "providerName": "PGSQL",
-      "providerId": "PGSQL",
-      "displayName": "PostgreSQL",
+      "providerName": "SNOWSQL",
+      "providerId": "SNOWSQL",
+      "displayName": "SnowflakeSQL",
       "connectionOptions": [
         {
           "specialValueType": "connectionName",
@@ -153,7 +153,7 @@
         {
           "name": "host",
           "displayName": "Server name",
-          "description": "Name of the PostgreSQL instance",
+          "description": "Name of the SnowflakeSQL instance",
           "valueType": "string",
           "specialValueType": "serverName",
           "isIdentity": true,

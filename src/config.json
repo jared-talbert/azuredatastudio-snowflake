@@ -1,5 +1,5 @@
 {
-	"downloadUrl": "https://github.com/Microsoft/pgtoolsservice/releases/download/{#version#}/pgsqltoolsservice-{#fileName#}",
+	"downloadUrl": "https://github.com/jared-talbert/snowflaketoolsservice/releases/download/{#version#}/snowflakesqltoolsservice-{#fileName#}",
 	"version": "v1.0.0",
 	"downloadFileNames": {
 		"Windows_64": "win-x64.zip",
@@ -15,9 +15,9 @@
 		"Ubuntu_16": "linux-x64.tar.gz",
 		"Linux": "linux-x64.tar.gz"
 	},
-	"installDirectory": "pgsqltoolsservice/{#platform#}/{#version#}",
+	"installDirectory": "snowflakesqltoolsservice/{#platform#}/{#version#}",
 	"executableFiles": [
-		"pgsqltoolsservice/pgtoolsservice_main",
-		"pgsqltoolsservice/pgtoolsservice_main.exe"
+		"snowflakesqltoolsservice/snowflaketoolsservice_main",
+		"snowflakesqltoolsservice/snowflaketoolsservice_main.exe"
 	]
 }
