@@ -17,7 +17,7 @@ Connect, query, and manage Snowflake databases with Azure Data Studio, a modern 
 See our [quickstart] for a step by step guide to getting started with Snowflake in Azure Data Studio.
 
 ## Offline Installation
-The extension will download and install a required PostgreSQL Tools Service package during activation. For machines with no Internet access, you can still use the extension by choosing the
+The extension will download and install a required Snowflake Tools Service package during activation. For machines with no Internet access, you can still use the extension by choosing the
 `Install from VSIX...` option in the Extension view and installing a bundled release from our [Releases](https://github.com/jared-talbert/azuredatastudio-snowflake/releases) page.
 Each operating system has a .vsix file with the required service included. Pick the file for your OS, download and install to get started.
 We recommend you choose a full release and ignore any alpha or beta releases as these are our daily builds used in testing.
