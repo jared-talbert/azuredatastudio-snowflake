@@ -1,4 +1,4 @@
-pgsqltoolsservice
+snowflakesqltoolsservice
 node_modules
 out
 *.vsix

@@ -1,6 +1,6 @@
 # SnowflakeSQL extension for Azure Data Studio (preview)
 
-Connect, query, and manage Postgres databases with Azure Data Studio, a modern data editor available for Linux, MacOS, and Windows. This (preview) extension enables you to interact with Postgres using Azure Data Studio features like:
+Connect, query, and manage Snowflake databases with Azure Data Studio, a modern data editor available for Linux, MacOS, and Windows. This (preview) extension enables you to interact with Snowflake using Azure Data Studio features like:
 
 * Connect to Postgres anywhere
 * Searchable object explorer view for database objects
@@ -14,7 +14,7 @@ Connect, query, and manage Postgres databases with Azure Data Studio, a modern d
 * Customizable keyboard shortcuts, multi-tab support, color theme options
 * Backup and Restore
 
-See our [quickstart] for a step by step guide to getting started with PostgreSQL in Azure Data Studio.
+See our [quickstart] for a step by step guide to getting started with Snowflake in Azure Data Studio.
 
 ## Offline Installation
 The extension will download and install a required PostgreSQL Tools Service package during activation. For machines with no Internet access, you can still use the extension by choosing the
