@@ -1,5 +1,5 @@
 {
-	"downloadUrl": "https://github.com/jared-talbert/snowflaketoolsservice/releases/download/{#version#}/snowflakesqltoolsservice-{#fileName#}",
+	"downloadUrl": "https://github.com/jared-talbert/snowflaketoolsservice/releases/download/{#version#}/snowflaketoolsservice-{#fileName#}",
 	"version": "v1.0.0",
 	"downloadFileNames": {
 		"Windows_64": "win-x64.zip",
@@ -15,9 +15,9 @@
 		"Ubuntu_16": "linux-x64.tar.gz",
 		"Linux": "linux-x64.tar.gz"
 	},
-	"installDirectory": "snowflakesqltoolsservice/{#platform#}/{#version#}",
+	"installDirectory": "snowflaketoolsservice/{#platform#}/{#version#}",
 	"executableFiles": [
-		"snowflakesqltoolsservice/snowflaketoolsservice_main",
-		"snowflakesqltoolsservice/snowflaketoolsservice_main.exe"
+		"snowflaketoolsservice/snowflaketoolsservice_main",
+		"snowflaketoolsservice/snowflaketoolsservice_main.exe"
 	]
 }

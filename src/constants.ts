@@ -4,7 +4,7 @@
  *--------------------------------------------------------------------------------------------*/
 'use strict';
 
-export const serviceName = 'SnowflakeSQLToolsService';
+export const serviceName = 'snowflaketoolsservice';
 export const providerId = 'SNOWSQL';
 export const serviceCrashMessage = 'Snowflake SQL Tools Service component exited unexpectedly. Please restart Azure Data Studio.';
 export const serviceCrashButton = 'View Known Issues';

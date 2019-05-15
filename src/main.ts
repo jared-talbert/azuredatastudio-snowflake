@@ -92,7 +92,7 @@ function generateServerOptions(executablePath: string): ServerOptions {
 		let useLocalSource = config["useDebugSource"];
 		if (useLocalSource) {
 			let localSourcePath = config["debugSourcePath"];
-			let filePath = path.join(localSourcePath, "snowflakesqltoolsservice/snowflaketoolsservice_main.py");
+			let filePath = path.join(localSourcePath, "snowflaketoolsservice/snowflaketoolsservice_main.py");
 			process.env.PYTHONPATH = localSourcePath;
 			serverCommand = process.platform === 'win32' ? 'python' : 'python3';
 
